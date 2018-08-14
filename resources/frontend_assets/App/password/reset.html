@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="">
+
+<!-- Mirrored from svasthlife.com/App/password/reset by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Jul 2018 07:52:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,viewport-fit=cover,user-scalable=no">
+  <title>Login validation</title>
+  <meta name="csrf-token" content="pApvwMlpYcNrMUg5woL5uKnB4a78rMAf6qNlkuZy" />
+        <link href="../css/style.css" rel="stylesheet" media="all">
+         <link href="../css/bootstrap.css" rel="stylesheet" media="all">
+         <link href="../css/extrastyle.css" rel="stylesheet" media="all">
+         <link href="../css/aos.css" rel="stylesheet" media="all">
+         <link href="../css/lightbox.css" rel="stylesheet" media="all">
+
+
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+
+
+
+
+        <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css"/>
+<link href="../../../www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+  <style>
+    
+.accounticon:hover .popupnew {
+    visibility: visible;
+    opacity:1;
+}
+.cowpad{
+        padding: 2%;
+    width: 33.3%;
+position:relative;
+}
+.rup {
+    color: #657e37;
+    border: 1px solid #657e37;
+    //width: 20%;
+    border-radius: 7px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 82%;
+    font-weight: bold;
+    padding:0.4% 1.4%;
+}
+.rup:hover{
+background: #657e37;
+color: whitesmoke !important;
+}
+.cowImage{
+width: 10vw;
+    margin: 0;
+margin-bottom: 0px ! important;
+}
+.buyNow{
+color: #657e37 !important;
+    font-size: 0.9em;
+    -webkit-appearance: none;
+    /* background: #657e37; */
+    transition: 0.5s all;
+    border: 2px solid #657e37;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    margin: 0% auto 0 ! important;
+    width: 40%;
+    padding: 2%;
+}
+.buyNow:hover{
+background: #657e37;
+color: whitesmoke !important;
+}
+.cowMilk{
+    margin: 0% 5% 1%;
+}
+.fontuser{
+   font-size:20px;
+    margin-top: -2px;
+}
+.fontuser1{
+   font-size:20px;
+    margin-top: -2px;
+}
+.popupnew{
+    width: 20vw;
+    position: absolute;
+    top: 100%;
+    right:-14px;
+    background-color: white;
+    border-radius: 2px;
+text-align:left;
+opacity:0;
+visibility:hidden;
+}
+ @media  screen and (min-width: 360px) and (max-width: 640px){
+  .copyright{
+    margin-top: 41px;
+  }
+  .loginn{
+    margin-top: 82px;
+  }
+
+
+  }
+  @media  screen and (min-width: 411px) and (max-width: 731px){
+   .loginn{
+    margin-top: 172px!important;
+  } 
+.copyright{
+    margin-top: 42px;
+  } 
+  }
+   @media  screen and (min-width: 411px) and (max-width: 823px){
+   .loginn{
+    margin-top: 172px;
+  }
+  .copyright{
+    margin-top: 135px;
+  } 
+  }
+  @media  screen and (min-width: 375px) and (max-width: 667px){
+   .loginn{
+    margin-top: 82px;
+  }
+  .copyright{
+    margin-top: 68px;
+  } 
+  }
+  @media  screen and (min-width: 414px) and (max-width:736px){
+   /*.loginn{
+    margin-top: 172px;
+  }*/
+  .copyright{
+    margin-top: 48px;
+  } 
+  }
+  @media  screen and (min-width: 375px) and (max-width: 812px){
+   /*.loginn{
+    margin-top: 228px;
+  }*/
+  /*.copyright{
+    margin-top: 135px;
+  } */
+  }
+  @media  screen and (device-aspect-ratio: 40/71) {
+    .loginn{
+      margin-top:52px;
+    }
+    .ram{
+      /*margin-top: 8px!important;*/
+    }
+    .mobile_usr{
+      margin-left: 123px!important;
+    }
+   .margin-right{
+    margin-top: -6px!important;
+   }
+  }
+
+
+
+
+    @media  screen and (min-width: 360px) and (max-width: 768px){
+      
+      .popupnew {
+    width: 84vw;
+    position: relative;
+    top: 180%;
+    right: -14px;
+    background-color: white;
+    border-radius: 2px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: -94px;
+        
+}
+      
+    }
+    @media  screen and (min-width: 360px) and (max-width: 768px){
+      .ram{
+        font-size: 12px;
+    margin-top: -18px;
+    margin-left: 33px;
+    color: #51463c;
+    width: 53px;
+      }
+      .fa fa-user-circle{
+        font-size: 25px;
+        margin-left: 37px;
+        
+      }
+      .accounticon mobile_usr{
+        width: 30px;
+    margin-left: -7px;
+      }
+    }
+  @media  screen and (min-width: 360px) and (max-width: 768px){
+    .formobile{
+      display: flex;
+    margin-top: -37px;
+    margin-left: 159px;
+          justify-content: center;
+      
+    }
+    .li>.a>.accounticon{
+      display: none;
+    }
+    .li>.a>.accounticon1{
+    display: none;
+    }
+    .popupnew {
+    width: 78vw;
+    position: relative;
+    top: 159%;
+    right: -58px;
+    background-color:white;
+    border-radius: 2px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: -68px;
+    margin-left: -211px;
+}
+    .forlaptop{
+      display:none;
+    
+    }
+    }
+    @media  screen and (min-width: 768px){
+      .loginn{
+        margin-top: 150px;
+      }
+      .formobile{
+        display: none;
+      }
+      .copyright{
+        margin-top: 239px;
+      }
+      .popupnew{
+    width: 20vw;
+    position: absolute;
+    top: 100%;
+    right:-14px;
+    background-color: white;
+    border-radius: 2px;
+text-align:left;
+opacity:0;
+visibility:hidden;
+}
+      .forlaptop{
+        display: flex;
+    margin-top: 36px;
+    margin-left: 83px;
+    float: right;
+      }
+    }
+    
+.inside{
+ padding: 5%;
+}
+.register{
+
+}
+.desktop-userActions {
+    width: 275px;
+    left: -137.5px;
+    top: 60px;
+    position: absolute;
+    padding: 25px;
+    z-index: 3;
+    box-shadow: 0 1px 10px rgba(0,0,0,.08);
+    transition: opacity .2s ease-out,visibility .2s ease-out;
+    background-color: #fff;
+    color: #3e4152;
+    border: 1px solid #f5f5f6;
+    visibility: hidden;
+    opacity: 0;
+    margin: -2px 0;
+}
+.desktop-getUserInLinks {
+    border: none;
+}
+.desktop-getInLinks {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 0px solid #eaeaec;
+}
+.desktop-linkButton:first-child {
+    margin: 10px 5px 0 0;
+}
+
+  .desktop-linkButton {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 7px 0;
+    width: 49%;
+    /* margin: 10px 10px 0 0; */
+    border: 1px solid #eaeaec;
+    /* border-radius: 2px; */
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+.desktop-userActionsArrow {
+    display: block;
+    top: -5px;
+    position: absolute;
+    width: 58px;
+/*    border-bottom: 4px solid #657e37;*/
+        left: 202.5px;
+}
+a {
+    text-decoration: none;
+    color: #282c3f;
+}
+.pad{
+padding:4%;
+}
+.popupnew{
+display:none;
+}
+.accounticon:hover >.popupnew{
+display:block;
+}
+@media (min-width: 992px){
+.mb-scrn2 {
+    height: 217px;
+}
+.mb-scrn2 ul li img {
+     width: 63%;
+    margin-left: 63px;
+}
+
+}
+    @media  screen and (min-width:360px){
+      .nav>.li>.accounticon{
+        display: none;
+      }
+      .nav>.li>.accounticon1{
+        display: none;
+      }
+      
+    }
+@media  screen and (max-width: 480px){
+.mb-scrn3 {
+        height: 525px ;
+}
+.mb-scrn2 ul li img {
+    width: 100%!important;
+    margin-left: 15px!important;
+}
+.cowpad{
+width: 100%;
+    padding: 3%;
+}
+.cowImage{
+width: 30vw;
+}
+.cowMilk{
+font-size: 3vw;    color: #3c0707;
+}
+.buyNow{
+    width: 40%;
+    background: transparent;
+margin: 6% auto 0 ! important;
+}
+.rup {
+font-size: 58%;
+}
+}
+@media  screen and (min-width: 481px) and (max-width: 768px){
+
+.mb-scrn3 {
+       height: 651px ;
+}
+.tab-content ul li {
+    list-style: none;
+    float: left;
+    margin-bottom: 15px;
+    padding-right: 40px;
+    border-right: 0px dotted #d36428!important;
+}
+.cowpad{
+    padding: 2%;
+}
+.cowImage{
+width: 15vw;
+}
+.cowMilk{
+font-size: 2vw;    color: #3c0707;
+}
+.buyNow{   
+ font-size: 1em;
+    width: 50%;
+    background: transparent;
+margin: 10% auto 0! important;
+}
+.rup{
+//width: 27%;
+font-size: 64%; 
+}
+  
+
+}
+    .mobile_usr{
+      margin-right: 50px;
+    }
+    
+     @media  screen and (max-width: 768px){
+      .accounticon,.accounticon1{
+        display: none !important;
+      }
+       .mob_cart, .mobile_usr{
+
+       display: block !important;
+       }
+      
+    }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+/*    border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+        top: -76%;
+    left: 36%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+    
+</style>
+</head>
+
+<body style="background-color: #f2f0f0;padding-top: 90px">
+  
+    <div class="container loginn">
+  
+  <div class="header-layouts" id="home-top">
+  <div class="secondary-header"></div>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+  <div class="navbar-header">
+        <div class="navbar-header"><a class="navbar-brand" href="#"><img src="../images/logo.png"></a></div>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+  </div>
+    
+    <div class="formobile">
+    <div class="accounticon mobile_usr" style="width: 30px;margin-left: -7px"><a href="javascript:void(0);"  onclick="myfunction()" class=""><div class="ram" style="    font-size: 12px;
+    margin-top: -18px;
+    margin-left: 33px;
+      width: 53px;
+      color: #51463c;
+      visibility: hidden">sign in</div><i class="fa fa-user-circle"  onclick="myfunction()" id="mobile" style="font-size: 25px;margin-left: 37px;"></i><div class="popupnew">
+<div class="desktop-userActionsArrow" ></div>
+                          <div class="pad"><div class="desktop-userActionsContent">
+                           <p class="register"><b>Your Account</b></p>  
+                           <p class="">Access account and manage orders</p>
+                            </div>
+<div class="desktop-getUserInLinks desktop-getInLinks" data-reactid="497"><a href="../register.html" data-track="signup" class="desktop-linkButton" data-reactid="498" style="background-color: #51463c">sign up</a>
+<a href="../login.html" data-track="login" class="desktop-linkButton" data-reactid="499" style="background-color: #51463c">login</a></div></div></div></a>
+                           </div>
+           <div class="accounticon1 mob_cart"><a href="#"><i class="fa fa-shopping-cart" style="font-size: 25px" aria-hidden="true"></i></a></div>
+    </div>
+    
+   <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav pull-right">
+      <li><a href="#home-top">Home</a></li>
+      <li><a href="#">About Svasth Life</a></li>
+      <li><a href="#">Benefits</a></li>
+      <li><a href="#">Procedure</a></li>
+      <li><a href="#">Buy Products</a></li>
+      <li><a href="#">Testimonial</a></li>
+      <li><a href="#">Contact Us</a></li>
+<!--          <div class="forlaptop">-->
+            
+           <li class="accounticon"><a href="javascript:void(0);"  class=""><i class="fa fa-user-circle"  id="mobile" style="font-size: 22px;"></i><div class="popupnew">
+<div class="desktop-userActionsArrow" ></div>
+                          <div class="pad"><div class="desktop-userActionsContent">
+                           <p class="register"><b>Your Account</b></p>  
+                           <p class="">Access account and manage orders</p>
+                            </div>
+
+<div class="desktop-getUserInLinks desktop-getInLinks" data-reactid="497"><a href="../register.html" data-track="signup" class="desktop-linkButton" data-reactid="498" style="background-color: #51463c">sign up</a>
+<a href="../login.html" data-track="login" class="desktop-linkButton" data-reactid="499" style="background-color: #51463c">login</a></div></div></div></a>
+                           </li>
+           <li class="accounticon1"><a href="#"><i class="fa fa-shopping-cart" style="font-size: 22px" aria-hidden="true"></i></a></li>
+<!--          </div>-->
+    </ul>
+
+   </div>
+       </div>
+</div>
+  </div>
+  </div>
+  
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Reset Password</div>
+
+                <div class="panel-body">
+                    
+                    <form class="form-horizontal" method="POST" action="http://svasthlife.com/App/password/email">
+                        <input type="hidden" name="_token" value="pApvwMlpYcNrMUg5woL5uKnB4a78rMAf6qNlkuZy">
+
+                        <div class="form-group">
+                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" value="" >
+
+                                                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Send Password Reset Link
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="copyright">
+  <div class="copyrightbottom">
+    <p>© 2017 Svasth Life. All rights reserved | Design by <a href="#">Krackerz</a></p>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!-- <script type="text/javascript" src="http://svasthlife.com/App/js/jquery-2.1.4.min.js"></script> -->
+
+<script src="../../../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../../../netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+
+  <script>
+    function myfunction(){
+      document.getElementById("demo").style.opacity='0.1';
+      document.getElementById("demo").style.backgroundColor='#f2f0f0';
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+    
+    $('#defaultForm').bootstrapValidator({
+        message: 'This value is not valid',
+        fields: {
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The Name is required and can\'t be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The Name must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_\.]+$/,
+                        message: 'The Name can only consist of alphabetical, number, dot and underscore'
+                    },
+                    different: {
+                        field: 'password',
+                        message: 'The username and password can\'t be the same as each other'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email address is required and can\'t be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'The password is required and can\'t be empty'
+                    },
+                    identical: {
+                        field: 'confirmPassword',
+                        message: 'The password and its confirm are not the same'
+                    },
+                    different: {
+                        field: 'username',
+                        message: 'The password can\'t be the same as username'
+                    }
+                }
+            },
+            confirmPassword: {
+                validators: {
+                    notEmpty: {
+                        message: 'The confirm password is required and can\'t be empty'
+                    },
+                    identical: {
+                        field: 'password',
+                        message: 'The password and its confirm are not the same'
+                    },
+                    different: {
+                        field: 'username',
+                        message: 'The password can\'t be the same as username'
+                    }
+                }
+            }
+           
+        }
+    });
+});
+  </script>
+  
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0353'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../../../img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+<!-- Mirrored from svasthlife.com/App/password/reset by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Jul 2018 07:53:31 GMT -->
+</html>
+
